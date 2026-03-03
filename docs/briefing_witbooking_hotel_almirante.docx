@@ -1,0 +1,408 @@
+**HOTEL ALMIRANTE**
+
+────────────────────
+
+BRIEFING DE PERSONALIZACIÓN
+
+**WITBOOKING**
+
+Plantilla de Confirmación de Reserva
+
+Logos para Motor de Reservas
+
+Mensaje Display
+
+────────────────────
+
+Playa de San Juan · Alicante · Costa Blanca
+
+Febrero 2026
+
+1\. IDENTIDAD DE MARCA --- REFERENCIA
+
+Resumen de los elementos del manual de identidad corporativa aplicables
+a la personalización de Witbooking.
+
+Gama cromática
+
+Colores principales extraídos del manual de identidad corporativa:
+
+  ----------- -------------------------- ---------------------------------
+              **Negro corporativo**      C:0 M:0 Y:0 K:100 \| R:22 G:22
+                                         B:21 \| #161615
+
+  ----------- -------------------------- ---------------------------------
+
+  ----------- -------------------------- ---------------------------------
+              **PANTONE 7721C**          C:93 M:36 Y:54 K:34 \| R:0 G:92
+                                         B:93 \| #005C5D
+
+  ----------- -------------------------- ---------------------------------
+
+  ----------- -------------------------- ---------------------------------
+              **PANTONE 3145C**          C:100 M:24 Y:35 K:14 \| R:0 G:117
+                                         B:141 \| #00758D
+
+  ----------- -------------------------- ---------------------------------
+
+  ----------- -------------------------- ---------------------------------
+              **PANTONE 117C**           C:6 M:18 Y:86 K:31 \| R:185 G:158
+                                         B:39 \| #B99E27
+
+  ----------- -------------------------- ---------------------------------
+
+  ----------- -------------------------- ---------------------------------
+              **Blanco**                 Fondos, espacios negativos \|
+                                         #FFFFFF
+
+  ----------- -------------------------- ---------------------------------
+
+Tipografías
+
+**Catamaran Thin** --- Tipografía principal para textos largos y cuerpo.
+Estilo limpio y moderno.
+
+**Trajan Pro** --- Tipografía de display para títulos y elementos
+destacados. Clásica y elegante.
+
+Nota: Si Witbooking no soporta estas fuentes exactas, usar como
+alternativas web-safe:
+
+Catamaran Thin → **Montserrat Light** o **Raleway Light**
+
+Trajan Pro → **Playfair Display** o **Cormorant Garamond**
+
+2\. LOGOS PARA WITBOOKING
+
+Witbooking requiere versiones del logotipo del hotel adaptadas a
+diferentes ubicaciones dentro del motor de reservas. A continuación se
+detallan las versiones necesarias y sus especificaciones técnicas.
+
+2.1 Versiones necesarias
+
+  ---------------- ----------------- ------------- --------------------------
+  **Versión**      **Dimensiones**   **Formato**   **Uso en Witbooking**
+
+  Logo principal   300 x 80 px       PNG transp.   Cabecera del motor de
+                                                   reservas (header)
+
+  Logo cuadrado    200 x 200 px      PNG transp.   Favicon / icono en
+                                                   pestañas del navegador
+
+  Logo email       250 x 70 px       PNG transp.   Cabecera del email de
+                                                   confirmación
+
+  Logo negativo    300 x 80 px       PNG transp.   Uso sobre fondos oscuros
+                                                   (footer, banners)
+
+  Logo con tagline 400 x 100 px      PNG transp.   Display / banners
+                                                   promocionales
+  ---------------- ----------------- ------------- --------------------------
+
+2.2 Especificaciones técnicas
+
+**Formato:** PNG con fondo transparente (obligatorio para todas las
+versiones)
+
+**Resolución:** Mínimo 72 ppi para web, recomendado 144 ppi (retina)
+
+**Color del logo:** Negro corporativo (#161615) sobre fondos claros
+
+**Versión negativo:** Blanco (#FFFFFF) sobre fondos oscuros
+
+**Zona de respeto:** Mantener el espacio de protección definido en el
+manual de identidad
+
+**Peso máximo:** 100 KB por archivo (optimizado para carga rápida)
+
+2.3 Notas de implementación
+
+Los logos se suben desde la extranet de Witbooking en:
+
+**Configuración \> Personalización \> Logo**
+
+Si el isotipo (ancla) funciona bien a tamaños pequeños, considerar
+usarlo como versión cuadrada en lugar del logotipo completo, para mayor
+legibilidad en espacios reducidos.
+
+3\. PLANTILLA EMAIL DE CONFIRMACIÓN DE RESERVA
+
+Diseño y contenido del email que recibe el huésped cuando confirma una
+reserva a través del motor Witbooking. El objetivo es que sea coherente
+con la identidad de marca, transmita confianza y genere expectativa.
+
+3.1 Estructura del email
+
+  -----------------------------------------------------------------------
+  **\[ LOGO HOTEL ALMIRANTE \]**
+
+  -----------------------------------------------------------------------
+
++-----------------------------------------------------------------------+
+| **Tu reserva está confirmada**                                        |
+|                                                                       |
+| Hola {nombre_huésped},                                                |
+|                                                                       |
+| Gracias por elegir Hotel Almirante. El Mediterráneo te espera.        |
++-----------------------------------------------------------------------+
+
++-----------------------------------------------------------------------+
+| **DETALLES DE TU RESERVA**                                            |
+|                                                                       |
+| N.º de reserva: **{numero_reserva}**                                  |
+|                                                                       |
+| Check-in: {fecha_checkin} · desde las 14:00                           |
+|                                                                       |
+| Check-out: {fecha_checkout} · hasta las 12:00                         |
+|                                                                       |
+| Habitación: {tipo_habitacion}                                         |
+|                                                                       |
+| Huéspedes: {num_huespedes}                                            |
+|                                                                       |
+| Régimen: {regimen}                                                    |
+|                                                                       |
+| Total: **{precio_total}**                                             |
++-----------------------------------------------------------------------+
+
+  -----------------------------------------------------------------------
+  **GESTIONAR MI RESERVA →**
+
+  -----------------------------------------------------------------------
+
++-----------------------------------------------------------------------+
+| **ANTES DE TU LLEGADA**                                               |
+|                                                                       |
+| Dirección: Playa de San Juan · Alicante                               |
+|                                                                       |
+| Cómo llegar: A 10 min del centro de Alicante · 20 min del aeropuerto  |
+|                                                                       |
+| Parking: Disponible para huéspedes (consultar disponibilidad)         |
+|                                                                       |
+| Contacto: reservas@hotelalmirante.com · 965 225 661                   |
++-----------------------------------------------------------------------+
+
++-----------------------------------------------------------------------+
+| Hotel Almirante · Playa de San Juan · Alicante                        |
+|                                                                       |
+| *El único hotel con acceso directo a la playa*                        |
+|                                                                       |
+| \@hotel_almirante · hotelalmirante.com                                |
++-----------------------------------------------------------------------+
+
+3.2 Copy del email --- Texto completo
+
+**Asunto del email:** Tu reserva en Hotel Almirante está confirmada ☀️
+
+**Preheader:** El Mediterráneo te espera. Aquí tienes los detalles de tu
+estancia.
+
+**Cuerpo del email:**
+
+Hola {nombre_huésped},
+
+Gracias por elegir Hotel Almirante. Tu reserva está confirmada y el
+Mediterráneo te espera.
+
+\[Bloque de datos de la reserva --- generado automáticamente por
+Witbooking con las etiquetas dinámicas\]
+
+Estamos en Playa de San Juan, el único hotel con acceso directo a 6
+kilómetros de costa. A 10 minutos del centro de Alicante y 20 del
+aeropuerto.
+
+Si necesitas algo antes de tu llegada, escríbenos a
+reservas@hotelalmirante.com o llámanos al 965 225 661.
+
+Te esperamos.
+
+Hotel Almirante
+
+Playa de San Juan · Alicante
+
+3.3 Etiquetas dinámicas de Witbooking
+
+Las siguientes etiquetas se sustituyen automáticamente por los datos
+reales de la reserva:
+
+  ----------------------------- -----------------------------------------
+  **Etiqueta**                  **Dato que muestra**
+
+  {nombre_huésped}              Nombre del titular de la reserva
+
+  {numero_reserva}              Localizador de la reserva
+
+  {fecha_checkin}               Fecha de entrada
+
+  {fecha_checkout}              Fecha de salida
+
+  {tipo_habitacion}             Tipo de habitación reservada
+
+  {num_huespedes}               Número de huéspedes
+
+  {regimen}                     Régimen contratado (AD, MP, etc.)
+
+  {precio_total}                Precio total de la estancia
+
+  {enlace_gestion}              URL para modificar/cancelar reserva
+  ----------------------------- -----------------------------------------
+
+Nota: Verificar los nombres exactos de las etiquetas en la extranet de
+Witbooking, ya que pueden variar según la versión del motor.
+
+4\. MENSAJE DISPLAY WITBOOKING
+
+El Display es un banner o mensaje destacado que aparece dentro del motor
+de reservas para incentivar la reserva directa. Debe ser visualmente
+atractivo, breve y alineado con la identidad de marca.
+
+4.1 Concepto del Display
+
+**Objetivo:** Comunicar la ventaja de reservar directamente desde la web
+del hotel frente a OTAs (Booking, Expedia, etc.).
+
+**Ubicación:** Visible en el primer paso del motor de reservas, antes de
+la selección de habitación.
+
+**Formato:** Banner gráfico (imagen) o mensaje HTML configurable desde
+la extranet.
+
+4.2 Opciones de mensaje
+
+**Opción A --- Mejor precio garantizado**
+
+  -----------------------------------------------------------------------
+  **Reserva directa · Mejor precio garantizado · Sin intermediarios**
+
+  -----------------------------------------------------------------------
+
+Copy complementario: \"Reservando aquí te garantizamos el mejor precio
+disponible. Directo, sin comisiones.\"
+
+**Opción B --- Ventajas exclusivas**
+
+  -----------------------------------------------------------------------
+  **Solo en nuestra web: late check-out · welcome drink · mejor tarifa**
+
+  -----------------------------------------------------------------------
+
+Copy complementario: \"Reserva directo y disfruta de ventajas que no
+encontrarás en ningún otro sitio.\"
+
+**Opción C --- Experiencia**
+
++-----------------------------------------------------------------------+
+| **El único hotel con acceso directo a Playa de San Juan**             |
+|                                                                       |
+| 6 km de costa · Piscina · Jardines · Restaurante frente al mar        |
++-----------------------------------------------------------------------+
+
+4.3 Especificaciones del banner gráfico
+
+Si se opta por un banner en formato imagen (recomendado para mayor
+impacto visual):
+
+  -------------------------- --------------------------------------------
+  **Dimensiones**            1200 x 300 px (ratio 4:1, adaptable a
+                             responsive)
+
+  **Formato**                JPG optimizado (\<150 KB) o PNG si tiene
+                             transparencia
+
+  **Tipografía**             Catamaran Thin o Trajan Pro (o alternativas
+                             web-safe)
+
+  **Colores fondo**          PANTONE 7721C (#005C5D) o PANTONE 3145C
+                             (#00758D)
+
+  **Color texto**            Blanco (#FFFFFF) para titular, Dorado
+                             (#B99E27) para subtítulo
+
+  **Imagen de fondo**        Vista del mar/playa desde el hotel (suave,
+                             con overlay oscuro al 40%)
+
+  **Logo**                   Versión negativo (blanco) en esquina
+                             superior derecha
+  -------------------------- --------------------------------------------
+
+4.4 Implementación en Witbooking
+
+El Display se configura desde la extranet de Witbooking:
+
+**Ruta:** Configuración \> Personalización de apariencia \> Gestor
+Display
+
+Se puede integrar como imagen (subiendo el banner) o como HTML
+personalizado. Si se usa HTML, Witbooking permite incluir estilos inline
+para controlar colores, fuentes y espaciado.
+
+También se pueden configurar mensajes contextuales que aparecen en pasos
+específicos del proceso de reserva, desde:
+
+**Ruta:** Configuración \> Mensajes web / Mensajes destacados
+
+5\. RESUMEN DE ENTREGABLES
+
+Checklist de archivos y acciones necesarias para completar la
+personalización de Witbooking:
+
+  -------- -------------------------- ------------------ ---------------------
+  **\#**   **Entregable**             **Formato**        **Responsable**
+
+  1        Logo principal (300x80 px) PNG transparente   Diseñador
+
+  2        Logo cuadrado (200x200 px) PNG transparente   Diseñador
+
+  3        Logo email (250x70 px)     PNG transparente   Diseñador
+
+  4        Logo negativo (300x80 px)  PNG transparente   Diseñador
+
+  5        Logo con tagline (400x100  PNG transparente   Diseñador
+           px)                                           
+
+  6        Banner Display (1200x300   JPG/PNG            Diseñador
+           px)                                           
+
+  7        Copy email confirmación    Este documento     Marketing
+
+  8        Configuración colores      HEX codes          Witbooking/IT
+           motor                                         
+
+  9        Subida logos a extranet    Extranet           IT / Hotel
+                                      Witbooking         
+
+  10       Configuración email        Extranet           IT / Hotel
+                                      Witbooking         
+
+  11       Configuración Display      Extranet           IT / Hotel
+                                      Witbooking         
+  -------- -------------------------- ------------------ ---------------------
+
+Códigos de color para configuración del motor
+
+Estos son los colores HEX que se deben introducir en la personalización
+del motor de Witbooking:
+
+  -------------------------- ------------------ --------------------------
+  **Elemento del motor**     **Color HEX**      **PANTONE ref.**
+
+  Color principal (botones,  #005C5D            PANTONE 7721C
+  enlaces)                                      
+
+  Color secundario (acentos, #00758D            PANTONE 3145C
+  hover)                                        
+
+  Color de acento            #B99E27            PANTONE 117C
+  (destacados, CTAs)                            
+
+  Texto principal            #161615            Negro corporativo
+
+  Texto secundario           #666666            Gris medio
+
+  Fondo general              #FFFFFF            Blanco
+
+  Fondo bloques info         #F5F5F5            Gris claro
+  -------------------------- ------------------ --------------------------
+
+Hotel Almirante · Playa de San Juan · Alicante
+
+hotelalmirante.com · \@hotel_almirante
