@@ -10,9 +10,9 @@
             .email-padding { padding: 0 !important; }
             /* Pocardy: reducir padding lateral */
             .pocardy-wrapper { padding: 0 10px !important; }
-            /* Foto: se adapta proporcionalmente */
-            .pocardy-foto { width: 40% !important; }
-            .pocardy-foto img { width: 100% !important; height: 210px !important; object-fit: cover !important; object-position: center top !important; }
+            /* Foto: rellena la celda exactamente */
+            .pocardy-foto { width: 40% !important; position: relative !important; }
+            .pocardy-foto img { position: absolute !important; top: 0 !important; left: 0 !important; width: 100% !important; height: 100% !important; object-fit: cover !important; object-position: center top !important; }
             /* Contenido: padding reducido, texto más pequeño */
             .pocardy-content { padding: 10px 10px !important; }
             .pocardy-content img { max-width: 110px !important; }
