@@ -8,49 +8,16 @@
         @media only screen and (max-width: 620px) {
             .email-container { width: 100% !important; min-width: 0 !important; }
             .email-padding { padding: 0 !important; }
-            /* Pocardy: padding reducido en wrapper */
-            .pocardy-wrapper { padding: 0 16px !important; }
-            /* Colapsar toda la estructura tabla a bloques centrados */
-            .pocardy-wrapper table,
-            .pocardy-wrapper tr,
-            .pocardy-wrapper td {
-                display: block !important;
-                width: 100% !important;
-                max-width: 100% !important;
-                box-sizing: border-box !important;
-                float: none !important;
-                text-align: center !important;
-            }
-            /* Foto: inline-block centrada por text-align */
-            .pocardy-foto img {
-                width: 60% !important;
-                max-width: 60% !important;
-                height: auto !important;
-                min-height: 0 !important;
-                display: inline-block !important;
-                padding: 20px 0 10px 0 !important;
-            }
-            /* Contenido: padding simétrico */
-            .pocardy-content {
-                padding: 0 20px 20px 20px !important;
-                text-align: center !important;
-            }
-            /* Logo: inline-block para que text-align:center lo centre */
-            .pocardy-content img {
-                display: inline-block !important;
-            }
-            /* Botón: inline-table para que text-align:center lo centre */
-            .pocardy-content table table {
-                display: inline-table !important;
-                width: auto !important;
-            }
-            .pocardy-content table table tr {
-                display: table-row !important;
-            }
-            .pocardy-content table table td {
-                display: table-cell !important;
-                width: auto !important;
-            }
+            /* Pocardy: reducir padding lateral */
+            .pocardy-wrapper { padding: 0 10px !important; }
+            /* Foto: se adapta proporcionalmente */
+            .pocardy-foto { width: 40% !important; }
+            .pocardy-foto img { width: 100% !important; min-height: 0 !important; height: auto !important; }
+            /* Contenido: padding reducido, texto más pequeño */
+            .pocardy-content { padding: 10px 10px !important; }
+            .pocardy-content img { max-width: 110px !important; }
+            .pocardy-content p { font-size: 9px !important; }
+            .pocardy-content a { font-size: 8px !important; letter-spacing: 1px !important; }
         }
     </style>
 </head>
@@ -360,11 +327,11 @@
                         <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
                             <tr class="pocardy-row">
                                 <!-- COLUMNA IZQUIERDA: FOTO -->
-                                <td valign="top" class="pocardy-foto" style="width: 240px; max-width: 240px; padding: 0; overflow: hidden;">
-                                    <img src="../../../assets/branding/pocardy-restaurante..jpg" alt="Restaurante Pocardy" style="display: block; width: 240px; max-width: 100%; min-height: 280px; object-fit: cover; object-position: center top;">
+                                <td valign="top" class="pocardy-foto" style="width: 46%; padding: 0; overflow: hidden;">
+                                    <img src="../../../assets/branding/pocardy-restaurante..jpg" alt="Restaurante Pocardy" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: center top;">
                                 </td>
                                 <!-- COLUMNA DERECHA: CONTENIDO -->
-                                <td valign="middle" class="pocardy-content" style="padding: 18px 20px 18px 18px;">
+                                <td valign="middle" class="pocardy-content" style="padding: 15px 15px;">
                                     <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
                                         <tr><td align="center" style="padding-bottom: 8px;"><img src="../../../assets/branding/RESTAURANTE POCARDY-_Marca copia.png" alt="Pocardy Restaurant" style="max-width: 160px; height: auto;"></td></tr>
                                         <tr><td align="center" style="padding-bottom: 4px;"><p style="font-family: Georgia, 'Times New Roman', serif; font-size: 13px; color: #FFFFFF; margin: 0; font-weight: 300; font-style: italic; line-height: 1.3;">Esencia mediterránea<br>frente al mar</p></td></tr>
