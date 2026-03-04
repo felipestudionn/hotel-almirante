@@ -8,22 +8,44 @@
         @media only screen and (max-width: 620px) {
             .email-container { width: 100% !important; min-width: 0 !important; }
             .email-padding { padding: 0 !important; }
-            /* Wrapper del Pocardy: quitar padding lateral */
+            /* Pocardy: padding reducido en wrapper */
             .pocardy-wrapper { padding: 0 16px !important; }
-            /* Pocardy: desmontar TODA la jerarquía en bloques (incluye tr) */
-            .pocardy-row,
-            .pocardy-row table,
-            .pocardy-row tr,
-            .pocardy-row td { display: block !important; width: 100% !important; max-width: 100% !important; }
-            /* Foto: centrada */
-            .pocardy-foto img { width: 60% !important; max-width: 60% !important; height: auto !important; min-height: 0 !important; display: block !important; margin: 0 auto !important; padding: 20px 0 10px 0 !important; }
-            /* Contenido: padding simétrico + todo centrado */
-            .pocardy-content { padding: 0 30px 20px 30px !important; text-align: center !important; }
-            .pocardy-content td { text-align: center !important; }
-            .pocardy-content img { display: block !important; margin: 0 auto !important; }
-            /* Botón: ancho auto centrado */
-            .pocardy-content table table { width: auto !important; margin: 0 auto !important; }
-            .pocardy-content table table td { width: auto !important; }
+            /* Pocardy: TODAS las tablas/tr/td dentro del wrapper a bloque */
+            .pocardy-wrapper table,
+            .pocardy-wrapper tr,
+            .pocardy-wrapper td {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                box-sizing: border-box !important;
+            }
+            /* Foto centrada al 60% */
+            .pocardy-foto img {
+                width: 60% !important;
+                max-width: 60% !important;
+                height: auto !important;
+                min-height: 0 !important;
+                display: block !important;
+                margin: 0 auto !important;
+                padding: 20px 0 10px 0 !important;
+            }
+            /* Contenido centrado con padding simétrico */
+            .pocardy-content {
+                padding: 0 20px 20px 20px !important;
+                text-align: center !important;
+            }
+            .pocardy-content img {
+                display: block !important;
+                margin: 0 auto !important;
+            }
+            /* Botón: ancho auto, centrado */
+            .pocardy-content table table {
+                width: auto !important;
+                margin: 0 auto !important;
+            }
+            .pocardy-content table table td {
+                width: auto !important;
+            }
         }
     </style>
 </head>
