@@ -10,19 +10,20 @@
             .email-padding { padding: 0 !important; }
             /* Wrapper del Pocardy: quitar padding lateral */
             .pocardy-wrapper { padding: 0 16px !important; }
-            /* Pocardy: desmontar TODA la jerarquía de tabla en bloques */
+            /* Pocardy: desmontar TODA la jerarquía en bloques (incluye tr) */
             .pocardy-row,
-            .pocardy-row td,
-            .pocardy-row table { display: block !important; width: 100% !important; max-width: 100% !important; }
-            /* Foto: centrada, proporcionada */
-            .pocardy-foto { width: 100% !important; max-width: 100% !important; }
+            .pocardy-row table,
+            .pocardy-row tr,
+            .pocardy-row td { display: block !important; width: 100% !important; max-width: 100% !important; }
+            /* Foto: centrada */
             .pocardy-foto img { width: 60% !important; max-width: 60% !important; height: auto !important; min-height: 0 !important; display: block !important; margin: 0 auto !important; padding: 20px 0 10px 0 !important; }
-            /* Contenido: padding simétrico */
-            .pocardy-content { padding: 0 30px 20px 30px !important; }
-            .pocardy-content table { width: 100% !important; margin: 0 auto !important; }
+            /* Contenido: padding simétrico + todo centrado */
+            .pocardy-content { padding: 0 30px 20px 30px !important; text-align: center !important; }
             .pocardy-content td { text-align: center !important; }
-            /* Botón: centrar con tabla inline */
+            .pocardy-content img { display: block !important; margin: 0 auto !important; }
+            /* Botón: ancho auto centrado */
             .pocardy-content table table { width: auto !important; margin: 0 auto !important; }
+            .pocardy-content table table td { width: auto !important; }
         }
     </style>
 </head>
