@@ -10,7 +10,7 @@
             .email-padding { padding: 0 !important; }
             /* Pocardy: padding reducido en wrapper */
             .pocardy-wrapper { padding: 0 16px !important; }
-            /* Pocardy: TODAS las tablas/tr/td dentro del wrapper a bloque */
+            /* Colapsar toda la estructura tabla a bloques centrados */
             .pocardy-wrapper table,
             .pocardy-wrapper tr,
             .pocardy-wrapper td {
@@ -18,32 +18,37 @@
                 width: 100% !important;
                 max-width: 100% !important;
                 box-sizing: border-box !important;
+                float: none !important;
+                text-align: center !important;
             }
-            /* Foto centrada al 60% */
+            /* Foto: inline-block centrada por text-align */
             .pocardy-foto img {
                 width: 60% !important;
                 max-width: 60% !important;
                 height: auto !important;
                 min-height: 0 !important;
-                display: block !important;
-                margin: 0 auto !important;
+                display: inline-block !important;
                 padding: 20px 0 10px 0 !important;
             }
-            /* Contenido centrado con padding simétrico */
+            /* Contenido: padding simétrico */
             .pocardy-content {
                 padding: 0 20px 20px 20px !important;
                 text-align: center !important;
             }
+            /* Logo: inline-block para que text-align:center lo centre */
             .pocardy-content img {
-                display: block !important;
-                margin: 0 auto !important;
+                display: inline-block !important;
             }
-            /* Botón: ancho auto, centrado */
+            /* Botón: inline-table para que text-align:center lo centre */
             .pocardy-content table table {
+                display: inline-table !important;
                 width: auto !important;
-                margin: 0 auto !important;
+            }
+            .pocardy-content table table tr {
+                display: table-row !important;
             }
             .pocardy-content table table td {
+                display: table-cell !important;
                 width: auto !important;
             }
         }
