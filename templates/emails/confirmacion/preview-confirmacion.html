@@ -8,15 +8,21 @@
         @media only screen and (max-width: 620px) {
             .email-container { width: 100% !important; min-width: 0 !important; }
             .email-padding { padding: 0 !important; }
-            /* Pocardy: desmontar tabla en bloques */
+            /* Wrapper del Pocardy: quitar padding lateral */
+            .pocardy-wrapper { padding: 0 16px !important; }
+            /* Pocardy: desmontar TODA la jerarquía de tabla en bloques */
             .pocardy-row,
-            .pocardy-row td { display: block !important; width: 100% !important; max-width: 100% !important; }
-            /* Foto: completa, sin recortar */
-            .pocardy-foto img { width: 60% !important; max-width: 60% !important; height: auto !important; min-height: 0 !important; display: block !important; margin: 0 auto !important; padding: 20px 0 !important; }
-            /* Contenido: centrado simétrico */
+            .pocardy-row td,
+            .pocardy-row table { display: block !important; width: 100% !important; max-width: 100% !important; }
+            /* Foto: centrada, proporcionada */
+            .pocardy-foto { width: 100% !important; max-width: 100% !important; }
+            .pocardy-foto img { width: 60% !important; max-width: 60% !important; height: auto !important; min-height: 0 !important; display: block !important; margin: 0 auto !important; padding: 20px 0 10px 0 !important; }
+            /* Contenido: padding simétrico */
             .pocardy-content { padding: 0 30px 20px 30px !important; }
-            .pocardy-content table { margin: 0 auto !important; }
+            .pocardy-content table { width: 100% !important; margin: 0 auto !important; }
             .pocardy-content td { text-align: center !important; }
+            /* Botón: centrar con tabla inline */
+            .pocardy-content table table { width: auto !important; margin: 0 auto !important; }
         }
     </style>
 </head>
@@ -318,7 +324,7 @@
         </td>
     </tr>
     <tr>
-        <td style="padding: 0 40px;">
+        <td class="pocardy-wrapper" style="padding: 0 40px;">
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
                 <!-- POCARDY: DOS COLUMNAS (foto + contenido) -->
                 <tr>
