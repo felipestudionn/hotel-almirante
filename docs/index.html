@@ -8,9 +8,15 @@
         @media only screen and (max-width: 620px) {
             .email-container { width: 100% !important; min-width: 0 !important; }
             .email-padding { padding: 0 !important; }
+            /* Pocardy: desmontar tabla en bloques */
+            .pocardy-row,
             .pocardy-row td { display: block !important; width: 100% !important; max-width: 100% !important; }
-            .pocardy-foto img { width: 100% !important; max-width: 100% !important; height: 220px !important; min-height: 0 !important; object-fit: cover !important; }
-            .pocardy-content { padding: 18px 24px 20px 24px !important; text-align: center !important; }
+            /* Foto: completa, sin recortar */
+            .pocardy-foto img { width: 60% !important; max-width: 60% !important; height: auto !important; min-height: 0 !important; display: block !important; margin: 0 auto !important; padding: 20px 0 !important; }
+            /* Contenido: centrado simétrico */
+            .pocardy-content { padding: 0 30px 20px 30px !important; }
+            .pocardy-content table { margin: 0 auto !important; }
+            .pocardy-content td { text-align: center !important; }
         }
     </style>
 </head>
