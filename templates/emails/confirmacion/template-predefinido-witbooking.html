@@ -1,0 +1,509 @@
+<html>
+<head>
+    <style>
+        #step-three a:hover {
+            text-decoration: none
+        }
+        #step-three a:link {
+            text-decoration: none
+        }
+        #step-three a:visited {
+            text-decoration: none
+        }
+        #step-three a:active {
+            text-decoration: none
+        }
+        #step-three b {
+            font-weight: 700
+        }
+        #step-three .alert {
+            margin-bottom: 12px
+        }
+        #step-three .col-md-8 {
+            min-height: 167px;
+            background: url(https://s3.eu-central-1.amazonaws.com/witbooking.static/img/loading.gif) center no-repeat
+        }
+        #step-three h4 {
+            font-size: 18px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-family: inherit;
+            font-weight: 500;
+            line-height: 1.1;
+            color: inherit
+        }
+        #step-three hr {
+            border-color: #777
+        }
+        #step-three .discount-item {
+            padding: 2px;
+            line-height: 15px;
+            display: block
+        }
+        #step-three .hide {
+            display: none
+        }
+        #step-three .msg-cancelled {
+            display: none;
+            margin-bottom: 17px
+        }
+        #step-three .panel {
+            margin-bottom: 20px;
+            -webkit-border-radius: 0 !important;
+            -moz-border-radius: 0 !important;
+            border-radius: 0 !important;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);
+            -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);
+            -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);
+            background-color: #fff;
+            border: 1px solid transparent;
+            max-width: 723px
+        }
+        #step-three .panel-body {
+            background-color: #fff;
+            padding: 15px
+        }
+        #step-three .panel-default {
+            border-color: #ddd
+        }
+        #step-three .page-header {
+            padding-bottom: 9px;
+            margin: 40px 0 20px;
+            border-bottom: 1px solid #eee
+        }
+        #step-three .panel-heading {
+            background-color: #E9E9E9 !important;
+            color: #333;
+            border-color: #ddd;
+            -webkit-border-radius: 0 !important;
+            -moz-border-radius: 0 !important;
+            border-radius: 0 !important;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            border-width: 1px;
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);
+            -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);
+            -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);
+            margin-bottom: 0;
+            padding: 10px 15px;
+            border-bottom: 1px solid transparent;
+            border-top-right-radius: 3px;
+            border-top-left-radius: 3px
+        }
+        #step-three .panel-title {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 16px;
+            color: inherit
+        }
+        #step-three .row {
+            margin-right: 0;
+            margin-left: 0
+        }
+        #step-three .input-enter {
+            width: 29.6em
+        }
+        #step-three #form-enter {
+            margin: 1em 0
+        }
+        #step-three .button-cancel,
+        #step-three .print-btn {
+            display: inline-block
+        }
+        #step-three .btn-return {
+            color: #FFF;
+            background-color: #2D2D2D
+        }
+        #step-three .btn-return:hover {
+            color: #FFF;
+            background-color: #000
+        }
+        #step-three .reservation-btn-group {
+            text-align: right
+        }
+        #step-three #bono-footer {
+            background-color: #343333
+        }
+        #step-three #bono-footer a:hover {
+            opacity: .5
+        }
+        #step-three #bono-footer .text-footer {
+            color: #545454
+        }
+        #step-three .panel-body .condition-entry b {
+            text-transform: capitalize
+        }
+        #step-three .panel-body .condition-entry p {
+            display: inline-block
+        }
+        #step-three .panel-body .condition-exit b {
+            text-transform: capitalize
+        }
+        #step-three .panel-body .condition-exit p {
+            display: inline-block
+        }
+        #step-three .panel-body .step3-condition {
+            display: block
+        }
+        #step-three .panel-body .step3-condition:not(:first-child) {
+            margin-top: 17px
+        }
+        #step-three .panel-body.qr-code {
+            padding: 0
+        }
+        #step-three .modal form {
+            margin: 0 2em
+        }
+        #step-three .modal .alert {
+            width: 90%;
+            margin: auto;
+            position: relative;
+            display: none
+        }
+        #step-three .modal .alert button {
+            position: absolute;
+            top: 2px;
+            right: 7px
+        }
+        #step-three .modal .cancel-free {
+            height: 102px;
+            resize: none;
+            border: 1px solid #FDA8A1;
+            color: #882121;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(200, 100, 80, 0.4);
+            padding: .5em
+        }
+        #step-three .modal .cancel-label {
+            text-decoration: underline;
+            color: #DD4341
+        }
+        #step-three .modal .modal-footer {
+            border-top: none
+        }
+        #step-three .modal .modal-header {
+            border-bottom: none
+        }
+        #step-three .modal #cancel-motive {
+            height: 60px;
+            resize: none
+        }
+        @media screen and (max-width: 992px) {
+            #step-three .logoMobileContainer {
+                margin: 0 15px
+            }
+            #step-three .row {
+                padding: 0 15px
+            }
+        }
+        .logo-mail {
+            max-width: 280px;
+            max-height: 100px
+        }
+        #step-three .cancel-footer .cancel-text .link-cancel {
+            text-transform: lowercase
+        }
+        #step-three .more-info {
+            max-width: 723px
+        }
+        #step-three .mail-footer {
+            max-width: 723px
+        }
+    </style>
+</head>
+<body>
+<div id="step-three" class="row">
+    <div class="col-md-8" style="background: none;min-height: 167px;">
+        <div id="ticket">
+            {{#emailSettings.showLogo}}
+            <div>
+                {{^logoEmail.src}}
+                {{#logo.src}}
+                <div class="logo">
+                    <img class="logo-mail" src="{{logo.src}}" alt="{{property.name}}" style="max-width: 280px;max-height: 100px;">
+                </div>
+                {{/logo.src}}
+                {{/logoEmail.src}}
+                {{#logoEmail.src}}
+                <div class="logo">
+                    <img class="logo-mail" src="{{logoEmail.src}}" alt="{{property.name}}" style="max-width: 280px;max-height: 100px;">
+                </div>
+                {{/logoEmail.src}}
+            </div>
+            {{/emailSettings.showLogo}}
+            {{#emailSettings.useCustomHeaderAndFooter}}
+            <div class="mail-header">
+                {{{customHeader}}}
+            </div>
+            {{/emailSettings.useCustomHeaderAndFooter}}
+            <div id="ticket-1">
+                <div class="panel panel-default" style="margin-bottom: 20px;font-family: Arial, Helvetica, sans-serif;font-size: 12px;box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);background-color: #fff;border: 1px solid transparent;max-width: 723px;border-color: #ddd;-webkit-border-radius: 0 !important;-moz-border-radius: 0 !important;border-radius: 0 !important;">
+                    <div class="panel-heading" style="color: #333;border-color: #ddd;font-family: Arial, Helvetica, sans-serif;font-size: 12px;border-width: 1px;box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);margin-bottom: 0;padding: 10px 15px;border-bottom: 1px solid transparent;border-top-right-radius: 3px;border-top-left-radius: 3px;background-color: #E9E9E9 !important;-webkit-border-radius: 0 !important;-moz-border-radius: 0 !important;border-radius: 0 !important;">
+                        <h3 class="panel-title" style="margin-top: 0;margin-bottom: 0;font-size: 16px;color: inherit;"><b style="font-weight: 700;">Datos de la reserva:</b>
+                        </h3>
+                    </div>
+                    <div class="panel-body" style="background-color: #fff;padding: 15px;">
+                        #<b style="font-weight: 700;">Reserva:</b> {{idConfirmation}}<br>
+                        <b style="font-weight: 700;">Estado</b>
+                        <span id="state-reservation-1">
+                            {{#reservationStatus.isPending}}
+                                confirmación pendiente
+                            {{/reservationStatus.isPending}}
+
+                            {{#reservationStatus.isCanceled}}
+                                cancelada
+                            {{/reservationStatus.isCanceled}}
+
+                            {{#reservationStatus.isConfirmed}}
+                                {{#reservationStatus.isPaymentConfirmed}}
+                                    confirmado
+                                {{/reservationStatus.isPaymentConfirmed}}
+                                {{#reservationStatus.isPaymentFailed}}
+                                    confirmado
+                                {{/reservationStatus.isPaymentFailed}}
+                                {{#reservationStatus.isPaymentPending}}
+                                    confirmación pendiente
+                                {{/reservationStatus.isPaymentPending}}
+                                {{#reservationStatus.isPaymentExpired}}
+                                    confirmación pendiente
+                                {{/reservationStatus.isPaymentExpired}}
+                            {{/reservationStatus.isConfirmed}}
+                        </span>
+                        <br>
+                        {{#reservationStatus.isCanceled}}
+                        <b style="font-weight: 700;">Cancelada::</b> {{dateFormat cancellationDate}}
+                        <br>
+                        <b style="font-weight: 700;">Motivo:</b> {{cancellationCause}}<br>
+                        {{/reservationStatus.isCanceled}}
+                        {{#property}}
+                        {{property.name}}<br>
+                        {{property.address}}<br>
+                        {{property.phoneNumber}}<br>
+                        {{/property}}
+                        <b style="font-weight: 700;">REF:</b> {{reservationId}}<br>
+                        {{#emailSettings.showAgent}}
+                        {{#agentName}}
+                        <b style="font-weight: 700;">AGT:</b> {{agentName}}<br>
+                        {{/agentName}}
+                        {{/emailSettings.showAgent}}
+                        <b style="font-weight: 700;">Fecha:</b>
+                        {{creationDate}}
+                        <br>
+                    </div>
+                </div>
+                <div class="panel panel-default" style="margin-bottom: 20px;font-family: Arial, Helvetica, sans-serif;font-size: 12px;box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);background-color: #fff;border: 1px solid transparent;max-width: 723px;border-color: #ddd;-webkit-border-radius: 0 !important;-moz-border-radius: 0 !important;border-radius: 0 !important;">
+                    <div class="panel-heading" style="color: #333;border-color: #ddd;font-family: Arial, Helvetica, sans-serif;font-size: 12px;border-width: 1px;box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);margin-bottom: 0;padding: 10px 15px;border-bottom: 1px solid transparent;border-top-right-radius: 3px;border-top-left-radius: 3px;background-color: #E9E9E9 !important;-webkit-border-radius: 0 !important;-moz-border-radius: 0 !important;border-radius: 0 !important;">
+                        <h3 class="panel-title" style="margin-top: 0;margin-bottom: 0;font-size: 16px;color: inherit;">
+                            <b style="font-weight: 700;">Datos del cliente:</b>
+                        </h3>
+                    </div>
+                    <div class="panel-body" style="background-color: #fff;padding: 15px;">
+                        {{customer.name}}, {{customer.lastName}}<br>
+                        <b style="font-weight: 700;">Email:</b>
+                        {{customer.email}}
+                        <br>
+                        {{#customer.idCard}}
+                        <b style="font-weight: 700;">DNI:</b> {{customer.idCard}}<br>
+                        {{/customer.idCard}}
+                        {{#customer.address}}
+                        {{customer.address}}<br>
+                        {{/customer.address}}
+                        {{#customer.country}}
+                        {{customer.country}}<br>
+                        {{/customer.country}}
+                        {{#customer.phoneNumber}}
+                        <b style="font-weight: 700;">Teléfono:</b>
+                        {{customer.phoneNumber}}
+                        <br>
+                        {{/customer.phoneNumber}}
+                        {{#comments}}
+                        <b style="font-weight: 700;">Comentarios:</b>
+                        {{comments}}
+                        {{/comments}}
+                    </div>
+                </div>
+                <div class="panel panel-default" style="margin-bottom: 20px;font-family: Arial, Helvetica, sans-serif;font-size: 12px;box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);background-color: #fff;border: 1px solid transparent;max-width: 723px;border-color: #ddd;-webkit-border-radius: 0 !important;-moz-border-radius: 0 !important;border-radius: 0 !important;">
+                    <div class="panel-heading" style="color: #333;border-color: #ddd;font-family: Arial, Helvetica, sans-serif;font-size: 12px;border-width: 1px;box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);margin-bottom: 0;padding: 10px 15px;border-bottom: 1px solid transparent;border-top-right-radius: 3px;border-top-left-radius: 3px;background-color: #E9E9E9 !important;-webkit-border-radius: 0 !important;-moz-border-radius: 0 !important;border-radius: 0 !important;">
+                        <h3 class="panel-title" style="margin-top: 0;margin-bottom: 0;font-size: 16px;color: inherit;">
+                            <b style="font-weight: 700;">Fechas:</b>
+                        </h3>
+                    </div>
+                    <div class="panel-body" style="background-color: #fff;padding: 15px;">
+                        <b style="font-weight: 700;">Entrada:</b>
+                        {{startDate}}<br>
+                        <b style="font-weight: 700;">Salida:</b>
+                        {{endDate}}<br>
+                        <b style="font-weight: 700;">Noche(s):</b>
+                        {{stayNights}}
+                    </div>
+                </div>
+                <div class="panel panel-default" style="margin-bottom: 20px;font-family: Arial, Helvetica, sans-serif;font-size: 12px;box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);background-color: #fff;border: 1px solid transparent;max-width: 723px;border-color: #ddd;-webkit-border-radius: 0 !important;-moz-border-radius: 0 !important;border-radius: 0 !important;">
+                    <div class="panel-heading" style="color: #333;border-color: #ddd;font-family: Arial, Helvetica, sans-serif;font-size: 12px;border-width: 1px;box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);margin-bottom: 0;padding: 10px 15px;border-bottom: 1px solid transparent;border-top-right-radius: 3px;border-top-left-radius: 3px;background-color: #E9E9E9 !important;-webkit-border-radius: 0 !important;-moz-border-radius: 0 !important;border-radius: 0 !important;">
+                        <h3 class="panel-title" style="margin-top: 0;margin-bottom: 0;font-size: 16px;color: inherit;">
+                            <b style="font-weight: 700;">Alojamiento:</b>
+                        </h3>
+                    </div>
+                    <div class="panel-body" style="background-color: #fff;padding: 15px;">
+                        {{units}} x {{inventoryFullName}}<br>
+                        <b style="font-weight: 700;">Número total de personas:</b>
+                        {{numberOfOccupants}}
+                        <br>
+                        <b style="font-weight: 700;">Precio por noche ({{currency}}):</b>
+                        {{#dailyPrices}}
+                        {{date}}:
+                        {{amount}}
+                        {{/dailyPrices}}
+                        <br>
+                        <b style="font-weight: 700;">Total alojamiento ({{currency}}):</b>
+                        {{baseAmount}}
+                        {{#arrivalTime}}
+                        <br>
+                        <b style="font-weight: 700;">Hora llegada</b>
+                        {{arrivalTime}}
+                        {{/arrivalTime}}
+                    </div>
+                </div>
+                {{#hasDiscounts}}
+                <div class="panel panel-default" style="margin-bottom: 20px;font-family: Arial, Helvetica, sans-serif;font-size: 12px;box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);background-color: #fff;border: 1px solid transparent;max-width: 723px;border-color: #ddd;-webkit-border-radius: 0 !important;-moz-border-radius: 0 !important;border-radius: 0 !important;">
+                    <div class="panel-heading" style="color: #333;border-color: #ddd;font-family: Arial, Helvetica, sans-serif;font-size: 12px;border-width: 1px;box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);margin-bottom: 0;padding: 10px 15px;border-bottom: 1px solid transparent;border-top-right-radius: 3px;border-top-left-radius: 3px;background-color: #E9E9E9 !important;-webkit-border-radius: 0 !important;-moz-border-radius: 0 !important;border-radius: 0 !important;">
+                        <h3 class="panel-title" style="margin-top: 0;margin-bottom: 0;font-size: 16px;color: inherit;">
+                            <b style="font-weight: 700;">Descuentos:</b>
+                        </h3>
+                    </div>
+                    <div class="panel-body" style="background-color: #fff;padding: 15px;">
+                        {{#discounts}}
+                        <b style="font-weight: 700;">{{name}}:</b>
+                        {{baseAmount}}
+                        {{#percentage}}
+                        x {{reduction}} %
+                        {{/percentage}}
+                        {{^percentage}}
+                        - {{reduction}} {{currency}}
+                        {{/percentage}}
+                        =
+                        {{amount}} {{currency}}
+                        {{/discounts}}
+                    </div>
+                </div>
+                {{/hasDiscounts}}
+                {{#hasServices}}
+                <div class="panel panel-default" style="margin-bottom: 20px;font-family: Arial, Helvetica, sans-serif;font-size: 12px;box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);background-color: #fff;border: 1px solid transparent;max-width: 723px;border-color: #ddd;-webkit-border-radius: 0 !important;-moz-border-radius: 0 !important;border-radius: 0 !important;">
+                    <div class="panel-heading" style="color: #333;border-color: #ddd;font-family: Arial, Helvetica, sans-serif;font-size: 12px;border-width: 1px;box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);margin-bottom: 0;padding: 10px 15px;border-bottom: 1px solid transparent;border-top-right-radius: 3px;border-top-left-radius: 3px;background-color: #E9E9E9 !important;-webkit-border-radius: 0 !important;-moz-border-radius: 0 !important;border-radius: 0 !important;">
+                        <h3 class="panel-title" style="margin-top: 0;margin-bottom: 0;font-size: 16px;color: inherit;">
+                            <b style="font-weight: 700;">Extras:</b>
+                        </h3>
+                    </div>
+                    <div class="panel-body" style="background-color: #fff;padding: 15px;">
+                        {{#services}}
+                        <b style="font-weight: 700;">{{name}}:</b>
+                        {{units}}
+                        x {{pricePerUnit}}
+                        = {{amount}} {{currency}}
+                        {{/services}}
+                    </div>
+                </div>
+                {{/hasServices}}
+                <div class="panel panel-default" style="margin-bottom: 20px;font-family: Arial, Helvetica, sans-serif;font-size: 12px;box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);background-color: #fff;border: 1px solid transparent;max-width: 723px;border-color: #ddd;-webkit-border-radius: 0 !important;-moz-border-radius: 0 !important;border-radius: 0 !important;">
+                    <div class="panel-heading" style="color: #333;border-color: #ddd;font-family: Arial, Helvetica, sans-serif;font-size: 12px;border-width: 1px;box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);margin-bottom: 0;padding: 10px 15px;border-bottom: 1px solid transparent;border-top-right-radius: 3px;border-top-left-radius: 3px;background-color: #E9E9E9 !important;-webkit-border-radius: 0 !important;-moz-border-radius: 0 !important;border-radius: 0 !important;">
+                        <h3 class="panel-title" style="margin-top: 0;margin-bottom: 0;font-size: 16px;color: inherit;">
+                            <b style="font-weight: 700;">Total:</b>
+                        </h3>
+                    </div>
+                    <div class="panel-body" style="background-color: #fff;padding: 15px;">
+                        <b translate style="font-weight: 700;">Total (impuestos incluidos) ({{currency}}):</b>
+                        {{totalAmount}}
+                        <br>
+                        <b translate style="font-weight: 700;">Pago anticipado ({{currency}}):</b>
+                        {{guaranteeAmount}}
+                        <br>
+                        {{#pendingAmount}}
+                        <b translate style="font-weight: 700;">Pendiente ({{currency}}):</b>
+                        {{pendingAmount}}
+                        {{/pendingAmount}}
+                    </div>
+                </div>
+                {{#emailSettings.showConditionsInHotelEmail}}
+                <div class="panel panel-default" style="margin-bottom: 20px;font-family: Arial, Helvetica, sans-serif;font-size: 12px;box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);background-color: #fff;border: 1px solid transparent;max-width: 723px;border-color: #ddd;-webkit-border-radius: 0 !important;-moz-border-radius: 0 !important;border-radius: 0 !important;">
+                    <div class="panel-heading" style="color: #333;border-color: #ddd;font-family: Arial, Helvetica, sans-serif;font-size: 12px;border-width: 1px;box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);margin-bottom: 0;padding: 10px 15px;border-bottom: 1px solid transparent;border-top-right-radius: 3px;border-top-left-radius: 3px;background-color: #E9E9E9 !important;-webkit-border-radius: 0 !important;-moz-border-radius: 0 !important;border-radius: 0 !important;">
+                        <h3 class="panel-title" style="margin-top: 0;margin-bottom: 0;font-size: 16px;color: inherit;">
+                            <b style="font-weight: 700;">Condiciones</b>:
+                        </h3>
+                    </div>
+                    <div class="panel-body conditions" style="background-color: #fff;padding: 15px;">
+                        {{#conditionInfo}}
+                        {{#checkIn}}
+                        <div class="condition-entry">
+                            <b style="font-weight: 700;text-transform: capitalize;">entrada:</b>
+                            {{{checkIn}}}
+                        </div>
+                        {{/checkIn}}
+                        {{#checkOut}}
+                        <div class="condition-entry">
+                            <b style="font-weight: 700;text-transform: capitalize;">salida:</b>
+                            {{{checkOut}}}
+                        </div>
+                        {{/checkOut}}
+                        {{#cancellation}}
+                        <div class="condition-entry">
+                            <b style="font-weight: 700;text-transform: capitalize;">Cancelaciones / Pago por adelantado:</b>
+                            {{{cancellation}}}
+                        </div>
+                        {{/cancellation}}
+                        {{#child}}
+                        <div class="condition-entry">
+                            <b style="font-weight: 700;text-transform: capitalize;">Niños y camas supletorias:</b>
+                            {{{child}}}
+                        </div>
+                        {{/child}}
+                        {{#pet}}
+                        <div class="condition-entry">
+                            <b style="font-weight: 700;text-transform: capitalize;">Mascotas:</b>
+                            {{{pet}}}
+                        </div>
+                        {{/pet}}
+                        {{#group}}
+                        <div class="condition-entry">
+                            <b style="font-weight: 700;text-transform: capitalize;">Grupos:</b>
+                            {{{group}}}
+                        </div>
+                        {{/group}}
+                        {{/conditionInfo}}
+                    </div>
+                </div>
+                {{/emailSettings.showConditionsInHotelEmail}}
+            </div>
+            {{#reservationStatus.isCanceled}}
+            <div class="alert alert-info" role="alert" style="margin-bottom: 12px;">
+                La reserva ya fué cancelada
+            </div>
+            {{/reservationStatus.isCanceled}}
+            {{#isCancelable}}
+            <div class="cancel-footer">
+                <div class="cancel-text">
+                    Haga clic para cancelar su reserva:
+                    <a class="link-cancel" href="{{config.ticketUrl}}" target="_blank" style="text-decoration: none;text-transform: lowercase;">Cancelar Reserva</a>
+                    o copie la siguiente dirección en su navegador:
+                    <a style="text-transform: none !important;text-decoration: none;" class="link-cancel" href="{{reservationUrl}}" target="_blank">{{reservationUrl}}</a>
+                </div>
+            </div>
+            {{/isCancelable}}
+            {{#emailSettings.useCustomHeaderAndFooter}}
+            {{#emailSettings.showFooterInHotelEmail}}
+            <div class="mail-footer" style="max-width: 723px;">
+                {{{customFooter}}}
+            </div>
+            {{/emailSettings.showFooterInHotelEmail}}
+            {{/emailSettings.useCustomHeaderAndFooter}}
+            {{#emailSettings.showConditionsInHotelEmail}}
+            {{#conditionInfo.additional}}
+            <div class="more-info" style="max-width: 723px;">
+                {{{conditionInfo.additional}}}
+            </div>
+            {{/conditionInfo.additional}}
+            {{/emailSettings.showConditionsInHotelEmail}}
+        </div>
+    </div>
+</div>
+</body>
+</html>
