@@ -171,8 +171,8 @@
 <td style="padding: 15px 40px 0 40px;">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color: #FFF9EB; border-left: 3px solid #B99E27;">
 <tr><td style="padding: 14px 16px;">
-<p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; color: #161615; margin: 0; font-weight: 600;">Statut du paiement</p>
-<p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; color: #666666; margin: 5px 0 0 0; line-height: 1.5;">Lors de la r&eacute;servation, un pr&eacute;paiement correspondant &agrave; la premi&egrave;re nuit est requis. Le solde restant doit &ecirc;tre r&eacute;gl&eacute; avant la date d'arriv&eacute;e.</p>
+<p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; color: #161615; margin: 0; font-weight: 600;">Paiement</p>
+<div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; color: #666666; margin: 5px 0 0 0; line-height: 1.5;">{{{conditionInfo.cancellation}}}</div>
 </td></tr>
 </table>
 </td>
@@ -219,16 +219,9 @@
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color: #F9F9F9;">
 <tr><td style="padding: 20px;">
 <p style="font-family: Georgia, 'Times New Roman', serif; font-size: 12px; color: #161615; margin: 0 0 12px 0; text-transform: uppercase; letter-spacing: 2px;">Conditions d'annulation</p>
-<p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; color: #666666; margin: 0; line-height: 1.6;">{{{conditionInfo.cancellation}}}</p>
+<p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; color: #666666; margin: 0; line-height: 1.6;">{{{cancellationPolicyHtml}}}</div>
 </td></tr>
 </table>
-</td>
-</tr>
-
-<!-- LIEN ANNULER -->
-<tr>
-<td align="center" style="padding: 18px 40px;">
-<p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; color: #999999; margin: 0;">Besoin d'annuler ou de modifier ? <a href="{{cancelUrl}}" style="color: #005C5D; text-decoration: underline;">G&eacute;rer la r&eacute;servation</a></p>
 </td>
 </tr>
 
@@ -264,9 +257,6 @@
 <td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; color: #666666; padding: 6px 0; text-align: right;">07:30 &ndash; 10:30 h</td>
 </tr>
 <tr>
-<td colspan="2" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; color: #999999; padding: 0 0 8px 0; line-height: 1.5;">Petit-d&eacute;jeuner non inclus ? R&eacute;servez-le jusqu'au jour d'arriv&eacute;e : 15 &euro;/adulte</td>
-</tr>
-<tr>
 <td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; color: #161615; padding: 6px 0; font-weight: 600; border-top: 1px solid #F0F0F0;">Bar / Caf&eacute;</td>
 <td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; color: #666666; padding: 6px 0; text-align: right; border-top: 1px solid #F0F0F0;">10:30 &ndash; 00:00 h</td>
 </tr>
@@ -286,12 +276,12 @@
 <td style="padding: 0 40px;">
 <p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; color: #005C5D; margin: 0 0 10px 0; text-transform: uppercase; letter-spacing: 2px; font-weight: 600;">Services suppl&eacute;mentaires</p>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 10px;">
-<tr><td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; color: #666666; padding: 5px 0; border-bottom: 1px solid #F0F0F0;">Massages et bien-&ecirc;tre &mdash; Biome Clinic</td><td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; color: #999999; padding: 5px 0; text-align: right; border-bottom: 1px solid #F0F0F0;">sur rendez-vous</td></tr>
+<tr><td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; color: #666666; padding: 5px 0; border-bottom: 1px solid #F0F0F0;">Soins du visage et corporels</td><td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; color: #999999; padding: 5px 0; text-align: right; border-bottom: 1px solid #F0F0F0;">&nbsp;</td></tr>
 <tr><td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; color: #666666; padding: 5px 0; border-bottom: 1px solid #F0F0F0;">Espace fitness 24h</td><td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; color: #999999; padding: 5px 0; text-align: right; border-bottom: 1px solid #F0F0F0;">coach disponible</td></tr>
 <tr><td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; color: #666666; padding: 5px 0; border-bottom: 1px solid #F0F0F0;">Transfert priv&eacute; (jusqu'&agrave; 7 pers.)</td><td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; color: #999999; padding: 5px 0; text-align: right; border-bottom: 1px solid #F0F0F0;">depuis 70 &euro;</td></tr>
 <tr><td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; color: #666666; padding: 5px 0; border-bottom: 1px solid #F0F0F0;">Early check-in / Late check-out</td><td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; color: #999999; padding: 5px 0; text-align: right; border-bottom: 1px solid #F0F0F0;">selon disponibilit&eacute;</td></tr>
-<tr><td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; color: #666666; padding: 5px 0; border-bottom: 1px solid #F0F0F0;">Piscine ext&eacute;rieure &middot; Room service</td><td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; color: #999999; padding: 5px 0; text-align: right; border-bottom: 1px solid #F0F0F0;">inclus</td></tr>
-<tr><td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; color: #666666; padding: 5px 0;">Location voitures et v&eacute;los</td><td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; color: #999999; padding: 5px 0; text-align: right;">nous consulter</td></tr>
+<tr><td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; color: #666666; padding: 5px 0; border-bottom: 1px solid #F0F0F0;">Piscine ext&eacute;rieure</td><td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; color: #999999; padding: 5px 0; text-align: right; border-bottom: 1px solid #F0F0F0;">inclus</td></tr>
+<tr><td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; color: #666666; padding: 5px 0;">Location voitures et v&eacute;los</td><td style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; color: #999999; padding: 5px 0; text-align: right;"><a href="mailto:reservas@hotelalmirante.com" style="color: #005C5D; text-decoration: underline;">nous consulter</a></td></tr>
 </table>
 </td>
 </tr>
@@ -301,7 +291,7 @@
 <td style="padding: 10px 40px 25px 40px;">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color: #F9F9F9;">
 <tr><td style="padding: 15px;">
-<p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; color: #666666; margin: 0 0 5px 0; line-height: 1.5;"><strong style="color: #161615;">Animaux :</strong> Chiens (max. 15 kg), un par chambre, en Doubles Standard et Premium &middot; 20 &euro;/nuit</p>
+<p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; color: #666666; margin: 0 0 5px 0; line-height: 1.5;"><strong style="color: #161615;">Animaux :</strong> Chiens (max. 15 kg), un par chambre, en Doubles Standard et Premium &middot; 20 &euro;/nuit &middot; sous r&eacute;servation pr&eacute;alable, consulter les conditions avec l'h&ocirc;tel</p>
 <p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; color: #666666; margin: 0 0 5px 0; line-height: 1.5;"><strong style="color: #161615;">H&ocirc;tel non-fumeur :</strong> Il est interdit de fumer dans les chambres et sur la terrasse du restaurant</p>
 <p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; color: #999999; margin: 0; line-height: 1.5;">* Parking ext&eacute;rieur gratuit selon disponibilit&eacute;</p>
 </td></tr>
@@ -356,7 +346,7 @@
 <td style="padding: 28px 40px;">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
 <tr><td align="center" style="padding: 0 0 6px 0;"><p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; color: #161615; margin: 0; font-weight: 600;">Des questions avant votre arriv&eacute;e ?</p></td></tr>
-<tr><td align="center"><p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; color: #666666; margin: 0;"><a href="mailto:reservas@hotelalmirante.com" style="color: #005C5D; text-decoration: none;">reservas@hotelalmirante.com</a> &nbsp;&middot;&nbsp; +34 965 225 661</p></td></tr>
+<tr><td align="center"><p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; color: #666666; margin: 0;"><a href="mailto:reservas@hotelalmirante.com" style="color: #005C5D; text-decoration: none;">reservas@hotelalmirante.com</a> &nbsp;&middot;&nbsp; +34 965 650 112</p></td></tr>
 </table>
 </td>
 </tr>
@@ -369,7 +359,7 @@
 <tr><td align="center" style="padding-bottom: 12px;"><p style="font-family: Georgia, 'Times New Roman', serif; font-size: 11px; color: #B99E27; margin: 0; font-style: italic;">Le seul h&ocirc;tel avec acc&egrave;s direct &agrave; la plage</p></td></tr>
 <tr><td style="padding: 0 50px 12px 50px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td style="border-bottom: 1px solid #333333;"></td></tr></table></td></tr>
 <tr><td align="center"><p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; margin: 0;"><a href="https://hotelalmirante.com" style="color: #999999; text-decoration: none;">hotelalmirante.com</a> &nbsp;&middot;&nbsp; <a href="https://pocardy.com" style="color: #999999; text-decoration: none;">pocardy.com</a> &nbsp;&middot;&nbsp; <a href="https://www.instagram.com/hotel_almirante/" style="color: #999999; text-decoration: none;">@hotel_almirante</a></p></td></tr>
-<tr><td align="center" style="padding-top: 6px;"><p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10px; color: #545454; margin: 0;">Av. de Niza, 38 &middot; Playa de San Juan &middot; Alicante &middot; Costa Blanca</p></td></tr>
+<tr><td align="center" style="padding-top: 6px;"><p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10px; color: #545454; margin: 0;">Av. de Niza, 38 &middot; 03540, Playa de San Juan, Alicante</p></td></tr>
 <tr><td align="center" style="padding-top: 15px;"><p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 9px; color: #444444; margin: 0; line-height: 1.5;">Cet email confirme votre r&eacute;servation. Vos donn&eacute;es personnelles seront trait&eacute;es pour sa gestion.<br><a href="https://www.hotelalmirante.com/politica-de-privacidad/" style="color: #666666; text-decoration: underline;">Politique de confidentialit&eacute;</a></p></td></tr>
 </table>
 </td>
